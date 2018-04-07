@@ -9,7 +9,11 @@ public class Usuario {
 	}
 
 	public void setRa(String ra) {
-		this.ra = ra;
+		if(ra.isEmpty() || ra == null){
+			throw new RuntimeException("RA invalido");
+		} else {
+			this.ra = ra;	
+		}
 	}
 
 	public String getNome() {
@@ -17,7 +21,11 @@ public class Usuario {
 	}
 
 	public void setNome(String nome) {
-		this.nome = nome;
+		if(nome.isEmpty() || nome == null){
+			throw new RuntimeException("Nome invalido");
+		} else {
+			this.nome = nome;	
+		}
 	}
 
 	@Override

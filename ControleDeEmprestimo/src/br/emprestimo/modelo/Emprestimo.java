@@ -15,7 +15,11 @@ public class Emprestimo {
 	}
 
 	public void setLivro(Livro livro) {
-		this.livro = livro;
+		if (livro == null) {
+			throw new RuntimeException("Livro invalido");
+		} else {
+			this.livro = livro;
+		}
 	}
 
 	public Usuario getUsuario() {
@@ -23,7 +27,11 @@ public class Emprestimo {
 	}
 
 	public void setUsuario(Usuario usuario) {
-		this.usuario = usuario;
+		if (usuario == null) {
+			throw new RuntimeException("Usuario invalido");
+		} else {
+			this.usuario = usuario;
+		}
 	}
 
 	public String getDataEmprestimo() {
@@ -31,20 +39,32 @@ public class Emprestimo {
 	}
 
 	public void setDataEmprestimo(String dataEmprestimo) {
-		this.dataEmprestimo = dataEmprestimo;
+		if (dataEmprestimo.isEmpty() || dataEmprestimo == null) {
+			throw new RuntimeException("Data emprestimo invalida");
+		} else if (!validaData(dataEmprestimo)){
+			throw new RuntimeException("Data emprestimo inesperada");
+		} else {
+			this.dataEmprestimo = dataEmprestimo;
+		}
 	}
 
 	public String getDataDevolucao() {
 		return dataDevolucao;
 	}
 
-	public void setDataDevolucao(String data) {
-		this.dataDevolucao = data;
+	public void setDataDevolucao(String dataDevolucao) {
+		if (dataDevolucao.isEmpty() || dataDevolucao == null) {
+			throw new RuntimeException("Data devolução invalida");
+		} else if (!validaData(dataDevolucao)){
+			throw new RuntimeException("Data devolução inesperada");
+		} else {
+			this.dataDevolucao = dataDevolucao;
+		}
 	}
 
 	/**
-	 * * valida o formato da data * @param data no formato dd/MM/yyyy * @return true
-	 * se a data estiver no formato valido e false para formato invalido
+	 * * valida o formato da data * @param data no formato dd/MM/yyyy * @return
+	 * true se a data estiver no formato valido e false para formato invalido
 	 */
 	public boolean validaData(String data) {
 		DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
