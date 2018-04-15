@@ -2,6 +2,11 @@ package exemplos.semaforo;
 
 import java.util.concurrent.Semaphore;
 
+/**
+ *
+ * @author Kelvin Costa
+ * 
+ */
 public class ProcessadorBasico {
 
     private static Semaphore semaforo;
@@ -69,6 +74,10 @@ public class ProcessadorBasico {
         }
     };
     
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         int numeroDePermissoes = 1;
         semaforo = new Semaphore(numeroDePermissoes);

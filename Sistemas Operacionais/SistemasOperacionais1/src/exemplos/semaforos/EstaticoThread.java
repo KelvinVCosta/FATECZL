@@ -1,14 +1,25 @@
 package exemplos.semaforos;
 
+/**
+ *
+ * @author Kelvin Costa
+ */
 public class EstaticoThread extends Thread {
 
     static float x;
     int idThread;
     
+    /**
+     *
+     * @param idThread
+     */
     public EstaticoThread(int idThread) {
         this.idThread = idThread;
     }
     
+    /**
+     *
+     */
     public void run(){
         conta();
     }

@@ -1,8 +1,11 @@
 package exemplos.carpark;
 
-import java.util.ArrayList;
 import java.util.concurrent.Semaphore;
 
+/**
+ *
+ * @author Kelvin Costa
+ */
 public class CarParkThread extends Thread {
 
     private int numCarro;
@@ -13,6 +16,9 @@ public class CarParkThread extends Thread {
         this.semaforo = semaforo;
     }
 
+    /**
+     *
+     */
     @Override
     public void run() {
         try {

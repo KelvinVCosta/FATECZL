@@ -13,11 +13,19 @@ public class SalaThread extends Thread {
     
     private int id;
     
+    /**
+     *
+     * @param id
+     * @param velocidade
+     */
     public SalaThread(int id, long velocidade){
         this.id = id;
         this.velocidade = velocidade;
     }
     
+    /**
+     *
+     */
     @Override
     public void run(){
         entraCorredor();

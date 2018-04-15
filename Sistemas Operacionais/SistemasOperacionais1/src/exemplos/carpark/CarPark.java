@@ -3,13 +3,24 @@ package exemplos.carpark;
 import java.util.concurrent.Semaphore;
 import java.util.stream.Stream;
 
+/**
+ *
+ * @author Kelvin Costa
+ */
 public class CarPark {
     
+    /**
+     *
+     */
     public static Semaphore semaforo;
     Thread estacionamento;
     static Stream pegarSair;
     static long count = 0;
     
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         
         

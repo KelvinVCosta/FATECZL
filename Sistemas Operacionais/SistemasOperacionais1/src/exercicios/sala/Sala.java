@@ -21,6 +21,12 @@ public class Sala {
     private final int VELOMIN = 4;
     private SalaDto[] salaVetor;
 
+    /**
+     *
+     * @param i
+     * @param idSala
+     * @param tempoExecucao
+     */
     public void adicionarFilaPorta(int i, int idSala, double tempoExecucao) {
         this.salaVetor[i].setId(idSala);
         this.salaVetor[i].setTempo(tempoExecucao);
