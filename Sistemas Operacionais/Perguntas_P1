@@ -1,0 +1,31 @@
+1.  Qual a diferença entre escalonamento preemptivo e não preemptivo?
+R.  Preemptivo: permite que o processo seja interrompido sem prejuízos
+    Não-preemptivo: não permite a interrupção
+
+2.  Quais os significados das seguintes siglas: FIFO, LIFO, SJB
+R.  FIFO: First In First Out
+    LIFO: Last In First Out
+    SJF:  Shortest Job First
+
+3.  Para que serve o comando nice?
+R.  Redefinição de prioridade de processo no escalonamento
+
+4.  Qual o valor da maior prioridade para o nice? E da menor?
+R.  Maior: -20 // Menor: 19
+
+5.  Qual a utilidade do algoritmo do banqueiro?
+R.  Verificar se o sistema é passivel de deadlock e auxilia na organização
+    de execução dos processos
+
+6.  O que é deadlock?
+R.  Um conjunto de processos estará em situação de deadlock se todo processo
+      pertencente ao conjunto estiver esperando por um evento que somente um
+      outro processo desse mesmo conjunto poderá fazer acontecer
+
+7.  Qual a funcionalidade dos Semaforos no escalonamento de processos?
+R.  Criar um limite de processos que serão executados simultaneamento auxiliando
+    no controle de recursos
+
+8.  Qual a diferença entre processo e thread?
+R.  Processo: Lista de instruções que deverão ser executados
+    Thread: Divisão do processo para que possam ser executados concorretemente
