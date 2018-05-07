@@ -1,0 +1,128 @@
+﻿01. Fale sobre a diferença entre Caixa Branca e Caixa Preta
+R:  Caixa Branca: Testes com acesso ao codigo fonte,
+      conhecido como testes estrutural, permitindo uma averiguação mais precisa
+      do comportamento da estrutura
+    Caixa Preta: Teste sem acesso ao codigo fonte, conhecido como
+    teste funcional uma vez que é baseado nos requisitos funcionais focando
+    nos requisitos da aplicação
+
+02. Fale sobre os seguintes modelos de desenvolvimento:
+a) Cascata
+    Abordagem sistematica e sequencial de desenvolvimento, começando pela
+    especificação progredindo até a implantação tendo suas fases
+    encadeadas sendo que cada fase consiste em um ou mais artefatos
+    estabelicidos e uma fase só é iniciada ao concluir e aprovar sua
+    predecessora
+
+    Vantagens: Visão de alto nivel, desenvolvimento em estágios, marcos
+
+    Desvantagens: Fluxo sequencial, resistencia a mudanças, risco de obsoletar
+    e não ter versão executavel antes do final do projeto, estado de bloqueio
+    da fase seguinte
+
+b) V
+    Desenvolvido afim de minimizar alguns dos problemas devidos a utilização
+    do Modelo Cascata, tendo os testes inicios o quanto antes dentro do ciclo
+    de vida, estabelecendo uma série de atividadades a serem executadas antes
+    da implementação sendo executadas em paralelo ao processo de desenvolvimento
+    Uma vez que existem diversos fatores que podem levar a erros os testes são
+    divididos em: unitários, integração, sistematico e de regressão
+
+    Vantagens: atividadades de teste como planejamento e projeto ocorrem antes
+    da implementação encontrando defeitos nas fases iniciais do desenvolvimento
+
+    Desvantagens: resistencia a mudanças
+
+c) Incremental
+    É identificado um esboço dos requisitos e divididos em diversos incrementos,
+    sendo que cada um proporciona um subconjunto da funcionalidade
+    São identificados, em linhas gerais, os serviços que serão fornecidos pelo
+    sistema e estes são priorizados
+    Cada iteração produz um sistema funcional que é verificado e confirmado
+    podendo serem chamadas de mini-cascata
+    Exemplos de modelos incrementais são OpenUP e Scrum
+
+d) Baseada em Componentes
+    Enfatiza o projeto e construção baseados em componentes reutilizaveis,
+    sendo que, em sua maioria, existe algum reuso de software
+
+e) Orientada a Serviços
+    As funções implementadas pelas aplicações devem ser disponibilizadas na
+    forma de serviços
+
+03. Cite as 3 partes da melhoria de processos
+R. Medir > Analisar > Mudar
+
+04. Comente sobre as causas de falhas em projetos de software
+R.  De modo geral, podem ser atribuidas a falta de maturidade na Gestão da
+    Qualidade de Software, sendo que, empresas com pouca maturidade possuem
+    as seguintes caracteristicas: acumulo de trabalho, abandono de planos e
+    procedimentos, o produto as vezes funciona mas com custo e prazo maiores,
+    alto nivel de insatisfação (clientes e funcionários) sendo que o sucesso
+    depende muito de "herois"
+
+05. Quais são as atividadades envolvidas no gerenciamento da qualidade?
+R. Garantia, Planejamento e Controle
+
+06. Quais são as caracteristicas:
+a) Diagrama de Pareto
+    Regra do 80/20 -> 80% dos problemas ocasionados por 20% das causas
+b) Diagrama de Ishikawa
+    Auxilia a determinar a causa raiz de um problema
+c) PDCA
+    Utilizada no controle de processos tendo como foco a solução de problemas
+    consistindo em 4 fases: (Plan)Planejar, (Do)Fazer, (Check) Verificar,
+    (Act) Agir
+
+07. De que se trata o processo de engenharia de software?
+R.  Descobrir, analisar, documentar e verificar as necessidades dos clientes
+    (serviços e restrições)
+
+08. Quais as possiveis classificações de requisitos segundo Sommerville
+e do que se tratam?
+R.  Requisitos de usuario: criado em linguagem natural, trata do que é esperado
+    do sistema e suas restrições
+    Requisitos de sistema: Descrições mais detalhadas das necessidades do
+    usuário, dos serviços e restrições operacionais, podendo fazer parte do
+    contrato firmado entre as partes
+
+09. Qual o padrão mais amplamente difundido para documentação de requisitos?
+R. IEEE/ANSI 830-1998
+
+10. Quais são as atividadades ligadas ao gerenciamento de requisitos?
+R.  Identificação dos requisitos, processo de gerenciamento de mudanças,
+    politicas de rastreabilidade e apoio de ferramentas case
+
+11. No que a rastreabilidade pode auxiliar?
+R.  Verificação: permite identificar requisitos ou funcionalidades não previstos
+    nos casos de testes
+    Validação: Permite mostrar se a implementação atende ao conjunto de
+    requisitos acordados
+
+12. Quais os 3 tipos de informações de rastreabilidade que podem ser mantidos?
+R.  Origem, Requisitos e de Projeto
+
+13. Quais são as 4 fases de teste?
+R.  Unidade, Integração, Validação e Confirmação
+
+14. Qual o objetivo e limitações do teste caixa-preta (teste baseado em especificação)?
+R.  Objetivo: Determinar se o programa satisfaz os requisitos funcionais
+    e não funcionais
+    Limitações: Como a especificação é informal, a determinação da cobertura
+    total da especificação obtida por um dado conjunto de casos de testes
+    tambem é informal
+
+15. Do que se trata o particionamento de equivalencia?
+R.  Metdo que divide o dominio de entrada em classes de dados dos quais os
+    casos de teste podem ser derivados, representando um conjunto de estados
+    válidos e inválidos para uma condição de entrada
+
+16. O que é Análise do Valor Limite (AVL)?
+R.  Complemtenta o particionamento de equivalência considerando a seleção dos
+    casos de testes no limite das classes de equivalencia
+
+17. O que é o Teste Funcional Sistemático?
+R.  Combina particionamento de equivalencia e AVL, requerindo pelo menos 2
+    casos de teste de cada partição para que defeitos coincidentes que
+    mascaram falhas seja minimizado alem de requerer a avaliação do limite de
+    cada partição e a subsequente
