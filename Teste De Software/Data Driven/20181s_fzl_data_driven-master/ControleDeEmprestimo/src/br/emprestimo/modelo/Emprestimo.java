@@ -110,7 +110,7 @@ public class Emprestimo {
 	}
 
 	public boolean verificaDiaDaSemana(String data) {
-		// TODO Auto-generated method stub
+		DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
 		return true;
 	}
 
