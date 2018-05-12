@@ -36,6 +36,7 @@ public class UC06CadastrarLivroV2 {
 			{ "", "Introducao ao Teste de Software", "Delamaro", "ISBN invalido" },
 			{ null, "Introducao ao Teste de Software", "Delamaro", "ISBN invalido" },
 			{ "1111", "", "Delamaro", "Titulo invalido" },
+			{ "1111", null, "Delamaro", "Titulo invalido" },
 			{ "1111", "Introducao ao Teste de Software", "", "Autor invalido" },
 			{ "1111", "Introducao ao Teste de Software", null, "Autor invalido" }
 			
