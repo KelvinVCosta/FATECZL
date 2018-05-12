@@ -109,4 +109,9 @@ public class Emprestimo {
 		return true;
 	}
 
+	public boolean verificaDiaDaSemana(String data) {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
 }
