@@ -1,0 +1,56 @@
+create database functions2
+use functions2
+
+create table aluno (
+cod int identity not null primary key,
+nome varchar(100),
+altura decimal(7,2),
+peso decimal(7,2))
+
+insert into aluno values 
+('Fulano', 1.7, 100.2),
+('Cicrano', 1.92, 107.1),
+('Beltrano', 1.83, 75.7)
+
+--Função Escalar
+create function fn_calculaimc(@cod int)
+RETURNS FLOAT
+as
+begin
+	declare @altura as decimal(7,2)
+	declare @peso as decimal(7,1)
+	declare @imc as decimal (7,2)
+	select @altura = altura, @peso = peso from aluno where cod = @cod
+	set @imc = @peso / POWER(@altura,2)
+	return (@imc)
+end
+
+select dbo.fn_calculaimc(3) as IMC
+
+--Função Multi-Statement Table
+create function fn_tabelaimc ()
+RETURNS @tabelaimc table (
+nome varchar(100),
+altura decimal(7,2),
+peso decimal(7,1),
+imc decimal(7,2),
+situacao varchar(max))
+as
+begin
+	
+	Insert @tabelaimc(nome,altura,peso) Select nome,altura,peso from aluno
+	
+	update @tabelaimc set imc = peso / POWER(altura,2)
+	
+	update @tabelaimc set situacao = 'Abaixo do peso' where imc < 18.5
+	update @tabelaimc set situacao = 'Peso adequado' where imc > 18.5 and imc < 24.9
+	update @tabelaimc set situacao = 'Sobrepeso' where imc > 25.0 and imc < 29.9
+	update @tabelaimc set situacao = 'Obesidade Grau I' where imc > 30.0 and imc < 34.9
+	update @tabelaimc set situacao = 'Obesidade Grau II' where imc > 35.0 and imc < 39.9
+	update @tabelaimc set situacao = 'Obesidade Grau III' where imc > 40.0
+
+	return
+	
+end
+
+select * from fn_tabelaimc()
