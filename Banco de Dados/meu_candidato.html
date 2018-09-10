@@ -1,0 +1,796 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="description" content="DBDesigner4 HTML Report">
+        <title>DBDesigner4 HTML Report</title>
+        <style>/* Links defaults */a {color:#000000; text-decoration: underline;}a:hover { text-decoration: none; color: #ff0000; text-decoration: underline}/* Scrollers */body, textarea {  scrollbar-base-color:#eeeeee;  scrollbar-3dlight-color:#62708A;  scrollbar-arrow-color:#62708A;  scrollbar-darkshadow-color:#000000;  scrollbar-face-color:#eeeeee;  scrollbar-highlight-color:#ffffff;  scrollbar-shadow-color:#aaaaaa;  scrollbar-track-color:#eeeeee;}/* NoMargins */body { margin-left: 15px; margin-right: 15px; margin-top: 15px; margin-bottom: 15px }/* General Font */div, p, td {font-family: Tahoma, Verdana, Arial, MS Sans Serif; color: black; font-size: 14px}/* Fonts */.fontNB {font-family: Tahoma, Verdana, Arial, Helvetica; font-size: 14px; font-weight: 700}.fontL {font-family: Tahoma, Verdana, Arial, Helvetica; font-size: 16px}.fontX {font-family: Tahoma, Verdana, Arial, Helvetica; font-size: 14px; font-weight: 700}.fontXB {font-family: Tahoma, Verdana, Arial, Helvetica; font-size: 20px; font-weight: 700}.fontS {font-family: Tahoma, Verdana, Arial, Helvetica; font-size: 12px; font-weight: 500}.fontSB {font-family: Tahoma, Verdana, Arial, Helvetica; font-size: 12px; font-weight: 700}  </style>
+      </head>
+      <body>
+        <h1> Dicionário de Dados </h1>
+        <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+          <tr>
+            <td class="fontX">Deputados     <font class="fontS">
+              <br>Tabela contendo informações sobre os deputados</font>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+                <tr>
+                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+                </tr>
+                <tr>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">
+                    <b>idDeputados</b>
+                  </td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">
+                    <b>INTEGER</b>
+                  </td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UnidadeFederativa_siglaUnidadeFederativa</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">nome</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Nome do deputado</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">siglaPartido</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Sigla do partido ao qual pertence o deputado</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="fontB">
+              <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+                <tr>
+                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+                </tr>
+                <tr>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">idDeputados<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">Deputados_FKIndex1</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">Index</td>
+                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UnidadeFederativa_siglaUnidadeFederativa<br>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <br>
+          <br>
+            <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+              <tr>
+                <td class="fontX">Eleitor     <font class="fontS">
+                  <br>Tabela contendo informações de acesso do  usuário</font>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+                    <tr>
+                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+                    </tr>
+                    <tr>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">
+                        <b>idEleitor</b>
+                      </td>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">
+                        <b>INTEGER</b>
+                      </td>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+                    </tr>
+                    <tr>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">email</td>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR</td>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Email do usuário, utilizado para realizar login</td>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">senha</td>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR</td>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Senha do usuário</td>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="fontB">
+                  <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+                    <tr>
+                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+                    </tr>
+                    <tr>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">idEleitor<br>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <br>
+              <br>
+                <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+                  <tr>
+                    <td class="fontX">keywords     <font class="fontS">
+                      <br>Tabela contendo palavras chaves relacionadas a um projeto de lei</font>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+                        <tr>
+                          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+                          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+                          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+                          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+                          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+                          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+                          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+                          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+                        </tr>
+                        <tr>
+                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">
+                            <b>idkeywords</b>
+                          </td>
+                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">
+                            <b>INTEGER</b>
+                          </td>
+                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+                        </tr>
+                        <tr>
+                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">keyword</td>
+                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR</td>
+                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">palavras chaves relacionadas a um projeto de lei</td>
+                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fontB">
+                      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+                        <tr>
+                          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+                          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+                          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+                        </tr>
+                        <tr>
+                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">idkeywords<br>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <br>
+                  <br>
+                    <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+                      <tr>
+                        <td class="fontX">ProposicaoKeyword     <font class="fontS">
+                          <br>Relacionamento entre proposicoes e palavras chaves que a descrevem</font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+                            <tr>
+                              <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+                              <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+                              <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+                              <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+                              <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+                              <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+                              <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+                              <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+                            </tr>
+                            <tr>
+                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">keywords_idkeywords</td>
+                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Proposicoes_idProposicoes</td>
+                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="fontB">
+                          <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+                            <tr>
+                              <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+                              <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+                              <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+                            </tr>
+                            <tr>
+                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">ProposicaoKeyword_FKIndex1</td>
+                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">Index</td>
+                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Proposicoes_idProposicoes<br>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">ProposicaoKeyword_FKIndex2</td>
+                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">Index</td>
+                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">keywords_idkeywords<br>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <br>
+                      <br>
+                        <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+                          <tr>
+                            <td class="fontX">Proposicoes     <font class="fontS">
+                              <br>Tabela contendo informacoes acerca de uma proposicao</font>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+                                <tr>
+                                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+                                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+                                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+                                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+                                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+                                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+                                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+                                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+                                </tr>
+                                <tr>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">
+                                    <b>idProposicoes</b>
+                                  </td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">
+                                    <b>INTEGER</b>
+                                  </td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">TipoProposicao_idTipoProposicao</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">ementa</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">descricao suscinta sobre uma proposicao</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">dataApresentacao</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">DATE</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">data da apresentacao da proposicao</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">ementaDetalhada</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">TEXT</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">descricao detalhada da proposicao</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">texto</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">TEXT</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">texto completo sobre a proposicao</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fontB">
+                              <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+                                <tr>
+                                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+                                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+                                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+                                </tr>
+                                <tr>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">idProposicoes<br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">Proposicoes_FKIndex1</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">Index</td>
+                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">TipoProposicao_idTipoProposicao<br>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <br>
+                          <br>
+                            <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+                              <tr>
+                                <td class="fontX">TipoProposicao     <font class="fontS">
+                                  <br>
+                                  </font>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+                                    <tr>
+                                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+                                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+                                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+                                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+                                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+                                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+                                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+                                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">
+                                        <b>idTipoProposicao</b>
+                                      </td>
+                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">
+                                        <b>INTEGER</b>
+                                      </td>
+                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">siglaTipoProposicao</td>
+                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR</td>
+                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">sigla referente ao tipo da proposições</td>
+                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="fontB">
+                                  <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+                                    <tr>
+                                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+                                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+                                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">idTipoProposicao<br>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                            <br>
+                              <br>
+                                <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+                                  <tr>
+                                    <td class="fontX">UnidadeFederativa     <font class="fontS">
+                                      <br>Relaciona sigla com o nome da Unidade da Federação</font>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+                                        <tr>
+                                          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+                                          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+                                          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+                                          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+                                          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+                                          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+                                          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+                                          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">
+                                            <b>siglaUnidadeFederativa</b>
+                                          </td>
+                                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">
+                                            <b>VARCHAR</b>
+                                          </td>
+                                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+                                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+                                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">nome</td>
+                                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR</td>
+                                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Nome da unidade da federação</td>
+                                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="fontB">
+                                      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+                                        <tr>
+                                          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+                                          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+                                          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+                                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+                                          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">siglaUnidadeFederativa<br>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <br>
+                                  <br>
+                                    <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+                                      <tr>
+                                        <td class="fontX">Votacoes     <font class="fontS">
+                                          <br>Armazena informações sobre as votações pelas quais passou uma proposições</font>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+                                            <tr>
+                                              <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+                                              <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+                                              <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+                                              <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+                                              <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+                                              <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+                                              <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+                                              <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+                                            </tr>
+                                            <tr>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">
+                                                <b>idVotacoes</b>
+                                              </td>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">
+                                                <b>INTEGER</b>
+                                              </td>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Proposicoes_idProposicoes</td>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">dataVotacao</td>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">DATE</td>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">data da votação</td>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="fontB">
+                                          <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+                                            <tr>
+                                              <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+                                              <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+                                              <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+                                            </tr>
+                                            <tr>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">idVotacoes<br>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">Votacoes_FKIndex1</td>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">Index</td>
+                                              <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Proposicoes_idProposicoes<br>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <br>
+                                      <br>
+                                        <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+                                          <tr>
+                                            <td class="fontX">VotoEleitor     <font class="fontS">
+                                              <br>Tabela utilizada para armazenar os votos do eleitor em cada proposição</font>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+                                                <tr>
+                                                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+                                                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+                                                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+                                                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+                                                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+                                                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+                                                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+                                                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+                                                </tr>
+                                                <tr>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Proposicoes_idProposicoes</td>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Eleitor_idEleitor</td>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">voto</td>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR</td>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Voto do eleitor (sim, não)</td>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="fontB">
+                                              <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+                                                <tr>
+                                                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+                                                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+                                                  <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+                                                </tr>
+                                                <tr>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">VotoEleitor_FKIndex1</td>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">Index</td>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Eleitor_idEleitor<br>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">VotoEleitor_FKIndex2</td>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">Index</td>
+                                                  <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Proposicoes_idProposicoes<br>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                        <br>
+                                          <br>
+                                            <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+                                              <tr>
+                                                <td class="fontX">VotosDeputados     <font class="fontS">
+                                                  <br>Armazena o voto do parlamentar em uma votação de uma preposição</font>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+                                                    <tr>
+                                                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+                                                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+                                                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+                                                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+                                                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+                                                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+                                                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+                                                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Deputados_idDeputados</td>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Votacoes_idVotacoes</td>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">voto</td>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR</td>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">voto do parlamentar (sim, não)</td>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="fontB">
+                                                  <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+                                                    <tr>
+                                                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+                                                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+                                                      <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">Votos_FKIndex1</td>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">Index</td>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Votacoes_idVotacoes<br>
+                                                      </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">Votos_FKIndex2</td>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">Index</td>
+                                                      <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Deputados_idDeputados<br>
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <br>
+                                              <br>
+                                              </body>
+                                            </html>
